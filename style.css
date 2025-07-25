@@ -828,6 +828,49 @@ section{
   font-weight: 500;
 }
 
+/* ===========================
+   Responsive Media Queries
+   =========================== */
+
+@media (max-width: 1024px) {
+  .home,
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    background: #1a1a1a;
+    padding: 1rem;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-info h1 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-sci {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
